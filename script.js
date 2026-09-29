@@ -20,7 +20,6 @@ if (logo) {
   logo.addEventListener('click', () => {
     const el = logo.querySelector('.logo-3d');
     el.style.animation = 'none';
-    // force reflow so the animation restarts
     void el.offsetWidth;
     el.style.animation = 'bounce-3d 1.2s ease-in-out 1';
     setTimeout(() => {
